@@ -16,3 +16,15 @@ variable "sg_cidr" {
   type = list
   default = ["0.0.0.0/0"]
 }
+
+variable "tags" {
+    type = map
+    default = {
+        Name = "MongoDB"
+        Environment = "DEV"
+        terraform = "true"
+        Component = "MongoDB"
+        Project = "Roboshop"
+    }
+  
+}

@@ -3,8 +3,7 @@ variable "ami_id" {
 }
 
 variable "instance_names" {
-    type = list 
-    default = ["MongoDB" ,"Cart" , "catilogue" , "user" , "Redis" , "MySql" ,
-     "RabbitMQ" , "Shipping" , "Payment" , "Web" ]
+    default = "MongoDB"
   
 }
+

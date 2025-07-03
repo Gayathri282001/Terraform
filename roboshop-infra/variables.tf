@@ -60,3 +60,26 @@ variable "database_subnet_names" {
     default = ["roboshop-private-1a","roboshop-private-1b"]
   
 }
+
+variable "public_route_table_tags" {
+    default = {
+        Name = "roboshop-public"
+    }
+  
+}
+
+
+variable "private_route_table_tags" {
+    default = {
+        Name = "roboshop-private"
+    }
+  
+}
+
+
+variable "database_route_table_tags" {
+    default = {
+        Name = "roboshop-database"
+    }
+  
+}
